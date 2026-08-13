@@ -18,7 +18,7 @@ export default function App() {
   useEffect(() => {
     fetchMenu()
       .then(setMenu)
-      .catch(() => setError('Unable to load the menu. Please check the API.'))
+      .catch(() => setError('Loading the menu for you.Please give us a moment.'))
       .finally(() => setLoading(false));
   }, []);
 
